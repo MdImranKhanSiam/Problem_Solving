@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int Size;
+    cout << "Enter Array Size: ";
+    cin >> Size;
+    int Array[Size];
+    for( int i = 0; i < Size; i++ ){
+        cout << "Enter Value: ";
+        cin >> Array[i];
+    }
+    for( int i = 1; i < Size; i++ ){
+        int key = Array[i];
+        int j = i - 1;
+        while( j >= 0 && Array[j] > key ){
+            Array[j+1] = Array[j];
+            j--;
+        }
+        Array[j+1] = key;
+    }
+    cout << "After Sorting: ";
+    for( int i = 0; i < Size; i++ ){
+        cout << Array[i] << " ";
+    }
+    return 0;
+}

@@ -1,0 +1,20 @@
+CSE-201
+Computer Organization & Architecture
+CSE-206
+Discrete Mathematics
+CSE-207
+Algorithm Design
+CSE-204
+Introduction to Operating System
+CSE-205
+Introduction to Operating System Lab
+CSE-208
+Algorithm Design lab
+MATH-III-1013
+Mathematics-III
+CSE-202
+Database Management System
+CSE-203
+Database Management System Lab
+PBL-103
+Project Based Learning-III
