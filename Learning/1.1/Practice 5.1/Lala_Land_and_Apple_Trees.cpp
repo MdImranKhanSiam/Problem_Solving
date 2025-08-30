@@ -11,7 +11,6 @@ using namespace std;
 ll Run( ll n, vector<pair<ll,ll>>&xa, ll direction )
 {
     ll collect = 0;
-
     ll position = -1;
 
     if( direction == 1 )
