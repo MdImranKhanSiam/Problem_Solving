@@ -63,7 +63,7 @@ int solve_eight_puzzle( vector<vector<int>>matrix, vector<int>&Backtrack, vector
 {
     int tracker;
 
-    priority_queue<pair<int,pair<vector<vector<int>>,int>>>Queue; //Priority,Puzzle,Backtrack_Index
+    priority_queue<pair<int,pair<vector<vector<int>>,int>>>Queue;
 
     set<vector<vector<int>>>store_state;
 
@@ -87,16 +87,12 @@ int solve_eight_puzzle( vector<vector<int>>matrix, vector<int>&Backtrack, vector
 
         if( check_puzzle(priority_matrix) == 9 )
         {
-//            cout << "Found Solution" << endl;
-
             tracker = current_track;
 
             break;
         }
 
-        //Possible Moves
-
-        vector<pair<int,int>>action{{0,-1},{0,1},{-1,0},{1,0}}; //Left, Right, Top, Bottom
+        vector<pair<int,int>>action{{0,-1},{0,1},{-1,0},{1,0}};
 
         pair<int,int>empty_cell;
 
@@ -142,8 +138,6 @@ int solve_eight_puzzle( vector<vector<int>>matrix, vector<int>&Backtrack, vector
                     Queue.push(make_pair(check_puzzle(current_matrix),make_pair(current_matrix,new_track)));
 
                     store_state.insert(current_matrix);
-
-
                 }
             }
         }
@@ -156,28 +150,6 @@ int main()
 {
     int n = 3;
 
-//    //Very Long Solving State
-//
-//    vector<vector<int>>matrix
-//    {
-//        {8,7,0},
-//        {3,4,5},
-//        {6,2,1}
-//    };
-
-
-//    //Unsolvable State
-
-//    vector<vector<int>>matrix
-//    {
-//        {1,2,3},
-//        {4,5,6},
-//        {8,7,0}
-//    };
-
-
-    //Solvable State
-
     vector<vector<int>>matrix
     {
         {1,3,6},
@@ -185,12 +157,7 @@ int main()
         {7,5,8}
     };
 
-
-    set<vector<vector<int>>>store_state;
-
-    bool solved = false;
-
-    vector<int>Backtrack; //For tracking the solving path
+    vector<int>Backtrack;
 
     vector<vector<vector<int>>>Backtrack_Puzzle;
 
