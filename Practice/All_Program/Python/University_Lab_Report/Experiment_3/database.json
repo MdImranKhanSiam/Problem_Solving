@@ -1,0 +1,448 @@
+{
+    "Neuron": [
+        {
+            "Keyword": "what type animal is cat",
+            "Value": "Cat is a mammal."
+        },
+        {
+            "Keyword": "is cat a mammal",
+            "Value": "Yes, cats are mammals."
+        },
+        {
+            "Keyword": "cat classification",
+            "Value": "Cats are classified as mammals."
+        },
+        {
+            "Keyword": "what sound cat make",
+            "Value": "Cats make a 'meow' sound."
+        },
+        {
+            "Keyword": "cat meow sound",
+            "Value": "The sound cats make is called a meow."
+        },
+        {
+            "Keyword": "how does cat talk",
+            "Value": "Cats communicate by meowing, purring, hissing, and growling."
+        },
+        {
+            "Keyword": "how many legs cat have",
+            "Value": "Cats have four legs."
+        },
+        {
+            "Keyword": "number of cat legs",
+            "Value": "A cat has 4 legs."
+        },
+        {
+            "Keyword": "legs of a cat",
+            "Value": "Cats walk on 4 legs."
+        },
+        {
+            "Keyword": "what do cats drink",
+            "Value": "Cats usually drink milk or water."
+        },
+        {
+            "Keyword": "cat drinking habit",
+            "Value": "Cats prefer clean water, but sometimes enjoy milk."
+        },
+        {
+            "Keyword": "cats like to drink",
+            "Value": "Cats like water and sometimes milk."
+        },
+        {
+            "Keyword": "do cats have claws",
+            "Value": "Yes, cats have sharp claws."
+        },
+        {
+            "Keyword": "cat claws",
+            "Value": "Cats have retractable and sharp claws."
+        },
+        {
+            "Keyword": "cat nails",
+            "Value": "A cat's claws are often referred to as nails and are very sharp."
+        },
+        {
+            "Keyword": "what do cats eat",
+            "Value": "Cats eat meat, fish, and cat food."
+        },
+        {
+            "Keyword": "cat diet",
+            "Value": "Cats are carnivores and eat meat, fish, and commercial cat food."
+        },
+        {
+            "Keyword": "what should i feed my cat",
+            "Value": "Feed your cat high-quality meat-based cat food."
+        },
+        {
+            "Keyword": "how long do cats live",
+            "Value": "Cats live about 12 to 18 years on average."
+        },
+        {
+            "Keyword": "cat lifespan",
+            "Value": "Most cats live between 12 and 18 years, some up to 20."
+        },
+        {
+            "Keyword": "average age of a cat",
+            "Value": "The average cat lives around 15 years."
+        },
+        {
+            "Keyword": "do cats sleep a lot",
+            "Value": "Yes, cats sleep 12\u201316 hours a day."
+        },
+        {
+            "Keyword": "how many hours cat sleep",
+            "Value": "Cats sleep up to 16 hours daily."
+        },
+        {
+            "Keyword": "cat sleep schedule",
+            "Value": "Cats spend most of the day sleeping."
+        },
+        {
+            "Keyword": "why cats purr",
+            "Value": "Cats purr when they're happy, relaxed, or seeking comfort."
+        },
+        {
+            "Keyword": "cat purring reason",
+            "Value": "Purring usually indicates a cat is content."
+        },
+        {
+            "Keyword": "does purring mean cat is happy",
+            "Value": "Often yes, purring means a cat is happy or relaxed."
+        },
+        {
+            "Keyword": "do cats love their owners",
+            "Value": "Yes, cats can form strong bonds with their owners."
+        },
+        {
+            "Keyword": "does my cat love me",
+            "Value": "If your cat rubs, purrs, or follows you, it probably loves you."
+        },
+        {
+            "Keyword": "cat affection",
+            "Value": "Cats show affection by purring, rubbing, and licking."
+        },
+        {
+            "Keyword": "why do cats scratch",
+            "Value": "Cats scratch to sharpen claws and mark territory."
+        },
+        {
+            "Keyword": "cat scratching behavior",
+            "Value": "Scratching is natural and helps cats maintain their claws."
+        },
+        {
+            "Keyword": "how to stop cat from scratching",
+            "Value": "Give a scratching post and discourage scratching furniture."
+        },
+        {
+            "Keyword": "how to train a cat",
+            "Value": "Use rewards, consistency, and patience to train a cat."
+        },
+        {
+            "Keyword": "can you train cats",
+            "Value": "Yes, with treats and repetition you can train cats."
+        },
+        {
+            "Keyword": "cat training tips",
+            "Value": "Start simple commands like sit, come, and stay with treats."
+        },
+        {
+            "Keyword": "do cats understand humans",
+            "Value": "Cats recognize voices and tones but may not understand words."
+        },
+        {
+            "Keyword": "can cats hear their names",
+            "Value": "Yes, cats can learn and respond to their names."
+        },
+        {
+            "Keyword": "how smart are cats",
+            "Value": "Cats are intelligent and can learn routines and names."
+        },
+        {
+            "Keyword": "difference between cat and dog",
+            "Value": "Cats are more independent while dogs are more social."
+        },
+        {
+            "Keyword": "cat vs dog",
+            "Value": "Cats need less attention and can be more self-reliant than dogs."
+        },
+        {
+            "Keyword": "why do cats lick",
+            "Value": "Cats lick to groom themselves and show affection."
+        },
+        {
+            "Keyword": "cat licking reason",
+            "Value": "Licking is a form of self-cleaning and bonding."
+        },
+        {
+            "Keyword": "is it normal for cat to lick me",
+            "Value": "Yes, it's a sign of trust and affection."
+        },
+        {
+            "Keyword": "what is kitten",
+            "Value": "A kitten is a baby cat."
+        },
+        {
+            "Keyword": "baby cat name",
+            "Value": "A baby cat is called a kitten."
+        },
+        {
+            "Keyword": "young cat called",
+            "Value": "A young cat is called a kitten."
+        },
+        {
+            "Keyword": "what color cats exist",
+            "Value": "Cats come in black, white, orange, gray, and mixed colors."
+        },
+        {
+            "Keyword": "cat fur color types",
+            "Value": "Common colors include tabby, solid, bicolor, and calico."
+        },
+        {
+            "Keyword": "are there black cats",
+            "Value": "Yes, black cats are common and beautiful."
+        },
+        {
+            "Keyword": "do cats see in dark",
+            "Value": "Yes, cats have excellent night vision."
+        },
+        {
+            "Keyword": "can cat see in dark",
+            "Value": "Cats can see in low light, almost like night vision."
+        },
+        {
+            "Keyword": "cat night vision",
+            "Value": "Cats have superior night vision due to rod cells in eyes."
+        },
+        {
+            "Keyword": "how many teeth does a cat have",
+            "Value": "Adult cats have 30 teeth."
+        },
+        {
+            "Keyword": "cat dental structure",
+            "Value": "Cats have 12 incisors, 4 canines, 10 premolars, and 4 molars."
+        },
+        {
+            "Keyword": "do cats have molars",
+            "Value": "Yes, cats have molars for chewing food."
+        },
+        {
+            "Keyword": "how many toes does a cat have",
+            "Value": "Cats usually have 18 toes\u20145 on each front paw and 4 on each back paw."
+        },
+        {
+            "Keyword": "cat toe count",
+            "Value": "Most cats have 18 toes in total."
+        },
+        {
+            "Keyword": "do cats have backbones",
+            "Value": "Yes, cats are vertebrates and have a spine."
+        },
+        {
+            "Keyword": "cat spine structure",
+            "Value": "Cats have flexible spines with 30 vertebrae."
+        },
+        {
+            "Keyword": "how many bones in a cat",
+            "Value": "Cats have about 230 to 250 bones depending on tail length."
+        },
+        {
+            "Keyword": "cat skeleton",
+            "Value": "The cat skeleton is made up of about 230 bones."
+        },
+        {
+            "Keyword": "do cats have belly buttons",
+            "Value": "Yes, cats have belly buttons, but they are small and not noticeable."
+        },
+        {
+            "Keyword": "how many whiskers do cats have",
+            "Value": "Cats have about 24 whiskers\u201412 on each side of the muzzle."
+        },
+        {
+            "Keyword": "cat ear shape",
+            "Value": "Cats have upright, triangular ears with excellent hearing abilities."
+        },
+        {
+            "Keyword": "do cats have good hearing",
+            "Value": "Cats can hear higher frequencies than humans and dogs."
+        },
+        {
+            "Keyword": "how far can cats hear",
+            "Value": "Cats can hear sounds from up to 1 mile away."
+        },
+        {
+            "Keyword": "cat eye shape",
+            "Value": "Cats have vertically slit pupils that help them see in dim light."
+        },
+        {
+            "Keyword": "do cats have color vision",
+            "Value": "Cats can see some colors like blue and green but not red."
+        },
+        {
+            "Keyword": "cat tongue texture",
+            "Value": "A cat\u2019s tongue is rough due to tiny spines called papillae."
+        },
+        {
+            "Keyword": "why cat tongue is rough",
+            "Value": "The rough texture helps cats groom and tear meat."
+        },
+        {
+            "Keyword": "cat fur types",
+            "Value": "Cat fur can be short, long, curly, or hairless depending on breed."
+        },
+        {
+            "Keyword": "do all cats have fur",
+            "Value": "Most cats have fur, but some breeds like Sphynx are hairless."
+        },
+        {
+            "Keyword": "how many cat breeds exist",
+            "Value": "There are around 70 recognized cat breeds."
+        },
+        {
+            "Keyword": "cat breed types",
+            "Value": "Popular breeds include Persian, Siamese, Maine Coon, and Bengal."
+        },
+        {
+            "Keyword": "what is a tabby cat",
+            "Value": "Tabby refers to a coat pattern, not a breed."
+        },
+        {
+            "Keyword": "difference between male and female cat",
+            "Value": "Males are often larger and may have different behaviors."
+        },
+        {
+            "Keyword": "cat gender identification",
+            "Value": "Check genital area or consult a vet to determine cat gender."
+        },
+        {
+            "Keyword": "do cats have blood types",
+            "Value": "Yes, cat blood types are A, B, and AB."
+        },
+        {
+            "Keyword": "cat body temperature",
+            "Value": "Normal body temperature of a cat is 100.5\u2013102.5\u00b0F (38\u201339.2\u00b0C)."
+        },
+        {
+            "Keyword": "do cats have sweat glands",
+            "Value": "Cats sweat through their paws."
+        },
+        {
+            "Keyword": "cat heart rate",
+            "Value": "Resting heart rate for cats is 140\u2013220 beats per minute."
+        },
+        {
+            "Keyword": "cat breathing rate",
+            "Value": "Normal breathing rate is 20\u201330 breaths per minute."
+        },
+        {
+            "Keyword": "what is a calico cat",
+            "Value": "Calico cats have white, black, and orange fur patterns."
+        },
+        {
+            "Keyword": "are calico cats always female",
+            "Value": "Most calico cats are female due to genetics."
+        },
+        {
+            "Keyword": "cat tail length",
+            "Value": "Tail length varies by breed; it helps with balance."
+        },
+        {
+            "Keyword": "do cats use tails for balance",
+            "Value": "Yes, tails help cats balance while walking or jumping."
+        },
+        {
+            "Keyword": "how flexible are cats",
+            "Value": "Cats are highly flexible due to extra vertebrae and loose skin."
+        },
+        {
+            "Keyword": "do cats have kneecaps",
+            "Value": "Yes, cats have kneecaps in their hind legs."
+        },
+        {
+            "Keyword": "cat muscle system",
+            "Value": "Cats have over 500 muscles that give them agility and strength."
+        },
+        {
+            "Keyword": "do cats have a good sense of smell",
+            "Value": "Cats have a strong sense of smell, better than humans."
+        },
+        {
+            "Keyword": "cat nose function",
+            "Value": "Cats use their nose for identifying territory, food, and mates."
+        },
+        {
+            "Keyword": "what is a cat's third eyelid",
+            "Value": "It's a protective inner eyelid called the nictitating membrane."
+        },
+        {
+            "Keyword": "do cats blink both eyes",
+            "Value": "Yes, cats blink slowly to communicate affection or relaxation."
+        },
+        {
+            "Keyword": "cat breathing through nose or mouth",
+            "Value": "Cats usually breathe through their noses."
+        },
+        {
+            "Keyword": "do cats get hiccups",
+            "Value": "Yes, cats can get hiccups but it's usually harmless."
+        },
+        {
+            "Keyword": "cat vocal cords",
+            "Value": "Cats have vocal cords that help produce meows and purrs."
+        },
+        {
+            "Keyword": "cat urine color",
+            "Value": "Healthy cat urine is clear to light yellow."
+        },
+        {
+            "Keyword": "do cats have fingerprints",
+            "Value": "Cat nose prints are unique like human fingerprints."
+        },
+        {
+            "Keyword": "cat hairball",
+            "Value": "Hairballs form when cats groom and swallow fur."
+        },
+        {
+            "Keyword": "why cat whiskers fall off",
+            "Value": "Whiskers shed naturally and regrow like fur."
+        },
+        {
+            "Keyword": "can cats get fat",
+            "Value": "Yes, overfeeding and lack of exercise can make cats overweight."
+        },
+        {
+            "Keyword": "how much does a cat weigh",
+            "Value": "Most domestic cats weigh 8\u201310 pounds (3.6\u20134.5 kg)."
+        },
+        {
+            "Keyword": "cat brain size",
+            "Value": "Cat brains are about the size of a walnut but very efficient."
+        },
+        {
+            "Keyword": "do cats get diseases",
+            "Value": "Yes, cats can get illnesses like cold, flu, or kidney disease."
+        },
+        {
+            "Keyword": "can cats be allergic",
+            "Value": "Yes, cats can have allergies to food, dust, or pollen."
+        },
+        {
+            "Keyword": "cat skin problems",
+            "Value": "Cats may suffer from fleas, dermatitis, or ringworm."
+        },
+        {
+            "Keyword": "How many eyes?",
+            "Value": "Two eyes"
+        },
+        {
+            "Keyword": "How many tails?",
+            "Value": "One tail"
+        },
+        {
+            "Keyword": "How many types of cats there are?",
+            "Value": "There are around 70 to 75 officially recognized breeds worldwide, such as the Persian, Siamese, Maine Coon, Bengal, Sphynx, Scottish Fold, Ragdoll, and British Shorthair."
+        },
+        {
+            "Keyword": "how fast cats can run?",
+            "Value": "A house cat can run up to 30 miles per hour (about 48 kilometers per hour) in short bursts"
+        }
+    ]
+}

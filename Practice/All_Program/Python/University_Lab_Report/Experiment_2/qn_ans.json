@@ -1,0 +1,55 @@
+{
+    "Question": [
+        {},
+        {
+            "qn": "Why do people smile?",
+            "ai_ans": "People smile to show happiness, friendliness, politeness, nervousness, love, or even sarcasm. It's a powerful way to express emotions and connect with others.",
+            "human_ans": "People smile when they feel happiness and joy. And also when they try to hide their pain and sadness they smile at people."
+        },
+        {
+            "qn": "What would you do if it started raining suddenly?",
+            "ai_ans": "If it started raining suddenly, I'd quickly find some cover, like a nearby shop or bus stop or use an umbrella if I have one. If not, I'd try to stay dry by using whatever I have, like a bag or jacket.",
+            "human_ans": "Often when it rains, I like to get wet in the rain and it gives me a different kind of feeling and vibe. But most of the time when it rains, I avoid getting wet so that I don't get sick."
+        },
+        {
+            "qn": "What's something people do that you find annoying?",
+            "ai_ans": "I get bothered when people are constantly late without letting anyone know. It feels like they don't respect other people's time, and it can mess up plans. I think a quick message or call to explain would make a big difference.",
+            "human_ans": "I find it very annoying when I hear people cursing/using bad language while talking."
+        },
+        {
+            "qn": "Explain how the internet works in simple terms.",
+            "ai_ans": "The internet is a global network that connects computers and devices using cables, satellites, and wireless signals. When you visit a website, your computer sends a request through your internet service provider to a server where that website is stored. The server sends back the website's data, which your browser displays. It's like sending and receiving letters instantly, using digital addresses called IP addresses.",
+            "human_ans": "The internet is a giant network that connects computers around the world. When you open a website, your device asks a server for the page, and the server sends the information back to your screen, like sending and receiving messages instantly."
+        },
+        {
+            "qn": "How would you plan a trip?",
+            "ai_ans": "Choose where to go, book transport and hotels, plan places to visit, pack your things, and get ready to travel.",
+            "human_ans": "I would first choose the best place where I can go and enjoy. Nextly I would book a transport and if I have to stay there for more than 1 day then I would book a hotel. Then I would start preparing for my trip like organizing everything and buying something if needed."
+        },
+        {
+            "qn": "Can you describe your perfect weekend?",
+            "ai_ans": "My perfect weekend would start with sleeping in late, then having a relaxed breakfast. I'd spend the afternoon outside, maybe visiting a park or meeting friends, and end the day watching a movie or reading a book at home.",
+            "human_ans": "On my perfect weekend I would wake up late. I would spend most of the time of the day playing video games and watching my favorite tv shows. I would gossip with my family members for hours. That would be my perfect weekend."
+        },
+        {
+            "qn": "Describe how it feels to wait for exam results.",
+            "ai_ans": "Waiting for exam results feels stressful and nervous. You keep imagining all the possible outcomes and refresh the results page over and over. But once you get the results, there's a big relief, whatever the outcome.",
+            "human_ans": "Waiting for something never feels good and for exam results it's also the same. And the waiting might even feel more intense when you know you did very well in exam and you just can't wait to see the good result."
+        },
+        {
+            "qn": "Why do we need sleep?",
+            "ai_ans": "We need sleep because it helps our body and brain rest, recover, and recharge. Sleep improves memory, mood, and overall health, keeping us focused and energetic during the day.",
+            "human_ans": "Sleep is a necessary activity for humans. Humans need 6-8 hours of sleep a day to keep their body and mental health in check. Lack of sleep can cause dizziness and hallucinations and can cause health and brain damage which can sometimes be permanent."
+        },
+        {
+            "qn": "What is the difference between a smartphone and a laptop?",
+            "ai_ans": "A smartphone is a small, pocket-sized device for calls, apps, and quick internet. A laptop is a bigger portable computer for typing, multitasking, and heavier work.",
+            "human_ans": "The difference between a smartphone and a laptop is that you can carry and hold your smartphone in your hand. Laptop is more preferable to use on a desk or in lap thus the name laptop."
+        },
+        {
+            "qn": "If you could have any superpower, what would it be and why?",
+            "ai_ans": "If I could have any superpower, I would choose the ability to understand and speak every language in the world. Imagine being able to connect with anyone, anywhere, without any barriers. It would open up so many opportunities to learn, help others, and build friendships across cultures.",
+            "human_ans": "I would definitely go for the ability to fly. I would choose it because I often dream of flying and it feels incredible."
+        }
+    ]
+}
