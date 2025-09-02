@@ -8,77 +8,187 @@ using namespace std;
 
 #define ull unsigned long long int
 
-void initial_position( vector<queue<ll>>&block_world, ll block )
+bool legal( vector<list<ll>>&Block_World, ll a, ll b )
 {
-    vector<ll>store;
+    bool result = true;
 
-    while( !block_world[block].empty() )
+    ll length = Block_World.size();
+
+    for( int i = 0; i < length; i++ )
     {
-        ll value = block_world[block].front();
+        ll total = 0;
 
-        store.push_back(value);
-
-        block_world[block].pop();
-    }
-
-    for( auto point : store )
-    {
-        block_world[point].push(point);
-    }
-}
-
-void print_world( vector<queue<ll>>&block_world, ll n )
-{
-    for( int i = 0; i < n; i++ )
-    {
-        queue<ll>store;
-
-        cout << i << ":";
-
-        while( !block_world[i].empty() )
+        for( auto point : Block_World[i] )
         {
-            ll value = block_world[i].front();
-
-            cout << " " << value;
-
-            store.push(value);
-
-            block_world[i].pop();
+            if( point == a || point == b )
+            {
+                total++;
+            }
         }
 
-        block_world[i] = store;
+        if( total == 2 )
+        {
+            result = false;
+
+            break;
+        }
+    }
+
+    if( a == b )
+    {
+        result = false;
+    }
+
+    return result;
+}
+
+void print_world( vector<list<ll>>&Block_World )
+{
+    ll length = Block_World.size();
+
+    for( int i = 0; i < length; i++ )
+    {
+        cout << i << ":";
+
+        for( auto point : Block_World[i] )
+        {
+            cout << " " << point;
+        }
 
         cout << endl;
     }
 }
 
+void initial_state( vector<list<ll>>&Block_World, ll target )
+{
+    ll length = Block_World.size();
+
+    bool flag = false;
+
+    vector<ll>return_blocks;
+
+    for( int i = 0; i < length; i++ )
+    {
+        if( !Block_World[i].empty() )
+        {
+            for( auto itr = Block_World[i].begin(); itr != Block_World[i].end(); )
+            {
+                if( *itr == target )
+                {
+                    flag = true;
+                }
+
+                if( flag == true )
+                {
+                    return_blocks.push_back(*itr);
+
+                    itr = Block_World[i].erase(itr);
+                }
+                else
+                {
+                    itr++;
+                }
+            }
+
+            if( flag == true )
+            {
+                break;
+            }
+        }
+    }
+
+    for( auto point : return_blocks )
+    {
+        Block_World[point].push_back(point);
+    }
+}
+
+void put_a_on_b( vector<list<ll>>&Block_World, ll a, ll b )
+{
+    ll length = Block_World.size();
+
+    vector<ll>stack_a;
+
+    bool flag = false;
+
+    for( int i = 0; i < length; i++ )
+    {
+        if( !Block_World[i].empty() )
+        {
+            for( auto itr = Block_World[i].begin(); itr != Block_World[i].end(); )
+            {
+                if( *itr == a )
+                {
+                    flag = true;
+                }
+
+                if( flag == true )
+                {
+                    stack_a.push_back(*itr);
+
+                    itr = Block_World[i].erase(itr);
+                }
+                else
+                {
+                    itr++;
+                }
+            }
+
+            if( flag == true )
+            {
+                break;
+            }
+        }
+    }
+
+    flag = false;
+
+    for( int i = 0; i < length; i++ )
+    {
+        if( !Block_World[i].empty() )
+        {
+            for( auto itr = Block_World[i].begin(); itr != Block_World[i].end(); itr++ )
+            {
+                if( *itr == b )
+                {
+                    flag = true;
+
+                    break;
+                }
+            }
+
+            if( flag == true )
+            {
+                for( auto point : stack_a )
+                {
+                    Block_World[i].push_back(point);
+                }
+
+                break;
+            }
+        }
+    }
+}
+
 int main()
 {
-//    ios_base::sync_with_stdio(false);
-//
-//    cin.tie(NULL);
-
     ll n;
 
     cin >> n;
-
-    vector<queue<ll>>block_world(n), stack_tracker(n);
-
-    for( int i = 0; i < n; i++ )
-    {
-        block_world[i].push(i);
-
-        stack_tracker[i].push(i);
-    }
 
     string s;
 
     getchar();
 
+    vector<list<ll>>Block_World(n);
+
+    for( int i = 0; i < n; i++ )
+    {
+        Block_World[i].push_back(i);
+    }
+
     while( true )
     {
-        print_world(block_world,n);
-
         getline(cin,s);
 
         if( s == "quit" )
@@ -86,42 +196,49 @@ int main()
             break;
         }
 
-        istringstream load(s);
+        vector<string>store;
 
-        string read;
+        istringstream read(s);
 
-        vector<string>command;
+        string word;
 
-        while( load >> read )
+        while( read >> word )
         {
-            command.push_back(read);
+            store.push_back(word);
         }
 
-        ll a = stoll(command[1]);
+        ll a = stoll(store[1]);
 
-        ll b = stoll(command[3]);
+        ll b = stoll(store[3]);
 
-        if( command[0] == "move" && command[2] == "onto" )
+        if( legal(Block_World,a,b) )
         {
-            initial_position(block_world, a);
+            if( store[0] == "move" && store[2] == "onto" )
+            {
+                initial_state(Block_World,a);
 
-            initial_position(block_world, b);
+                initial_state(Block_World,b);
 
-            block_world[b].push(a);
+                put_a_on_b(Block_World,a,b);
+            }
+            else if( store[0] == "move" && store[2] == "over" )
+            {
+                initial_state(Block_World,a);
 
-            block_world[a].pop();
-        }
-        else if( command[0] == "move" && command[2] == "over" )
-        {
+                put_a_on_b(Block_World,a,b);
+            }
+            else if( store[0] == "pile" && store[2] == "onto" )
+            {
+                initial_state(Block_World,b);
 
-        }
-        else if( command[0] == "pile" && command[2] == "onto" )
-        {
-
-        }
-        else if( command[0] == "pile" && command[2] == "over" )
-        {
-
+                put_a_on_b(Block_World,a,b);
+            }
+            else if( store[0] == "pile" && store[2] == "over" )
+            {
+                put_a_on_b(Block_World,a,b);
+            }
         }
     }
+
+    print_world(Block_World);
 }

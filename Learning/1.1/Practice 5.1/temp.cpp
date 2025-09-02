@@ -1,18 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <list>
 
-using namespace std;
+int main() {
+    std::list<int> myList = {10, 20, 30, 40, 50};
 
-#define endl "\n"
+    int target = 30;
 
-#define ll long long int
+    if (myList.contains(target)) {
+        std::cout << "Found " << target << " in the list.\n";
+    } else {
+        std::cout << target << " not found in the list.\n";
+    }
 
-#define ull unsigned long long int
-
-int main()
-{
-    ios_base::sync_with_stdio(false);
-
-    cin.tie(NULL);
-
-    cout << "Hello Imran" << endl;
+    return 0;
 }
