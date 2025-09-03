@@ -1,16 +1,27 @@
-#include <iostream>
-#include <list>
+#include <bits/stdc++.h>
 
-int main() {
-    std::list<int> myList = {10, 20, 30, 40, 50};
+using namespace std;
 
-    int target = 30;
+#define endl "\n"
 
-    if (myList.contains(target)) {
-        std::cout << "Found " << target << " in the list.\n";
-    } else {
-        std::cout << target << " not found in the list.\n";
-    }
+#define ll long long int
 
-    return 0;
+#define ull unsigned long long int
+
+int main()
+{
+    deque<ll>q;
+
+    q.push_front(4);
+
+    q.push_front(7);
+
+    q.push_front(2);
+
+    q.pop_front();
+
+    cout << q.front();
+
+
+
 }
