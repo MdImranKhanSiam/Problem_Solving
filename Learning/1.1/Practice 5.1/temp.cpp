@@ -10,18 +10,31 @@ using namespace std;
 
 int main()
 {
-    deque<ll>q;
+    ios_base::sync_with_stdio(false);
 
-    q.push_front(4);
+    cin.tie(NULL);
 
-    q.push_front(7);
+    vector<ll>s;
 
-    q.push_front(2);
+    s.push_back(4);
 
-    q.pop_front();
+    s.push_back(8);
 
-    cout << q.front();
+    s.push_back(6);
 
+    for( auto point : s )
+    {
+        cout << point << " ";
+    }
 
+    cout << endl;
 
+    s.pop_();
+
+    for( auto point : s )
+    {
+        cout << point << " ";
+    }
+
+    cout << endl;
 }
