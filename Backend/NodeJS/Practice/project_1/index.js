@@ -1,0 +1,11 @@
+const express = require('express');
+const { readFile } = require('fs');
+
+const app = express();
+
+app.get('/', async (request,response) => {
+
+    response.send( await readFile('home.html', 'utf-8') );
+});
+
+app.listen(process.env.PORT || 3000, () => console.log('App on http://localhost:3000'))
