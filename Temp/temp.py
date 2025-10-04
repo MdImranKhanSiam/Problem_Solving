@@ -1,41 +1,58 @@
-def recursion(a,b,c,d):
-    global total_recursion
-    global min_step
-
-    total_recursion += 1
-    
-    if total_recursion > 1000:
-        return
-
-    N = a
-    D = b
-    X = c
-    Step = d
-    
-    # print(Step)
-
-    if X > N:
-        # print('Yeah')
-        return
-
-    if X == N:
-        if Step < min_step:
-            min_step = Step
-
-    recursion(N,D,int(X*2),Step+1)
-    recursion(N,D,int(X+D),Step+1)
+import math
 
 tc = int(input())
 
 for i in range(0,tc):
-    global total_recursion
-    global min_step
-    limit = int(1e18)+9
-    total_recursion = 0
-    min_step = limit
     n, d = list(map(int,input().split()))
-    recursion(n,d,1,0)
-    if min_step == limit:
-        print(-1)
-    else:
-        print(f'{min_step}')
+    result = int(1e18)
+
+    for j in range(0,61):
+        remain = n-int(pow(2,j))
+        
+        if remain < 0:
+            break
+        
+        if remain % d == 0:
+            moves = int(j+(remain//d))
+            result = min(result,moves)
+
+    for j in range(0,100000):
+        remain = int(n-(d*j))
+
+        if remain < 0:
+            break
+
+        multi = 0
+
+        if remain != 0:
+            multi = int(math.log(remain,2))
+
+        if multi % 2 == 0:
+            moves = int(j+multi)
+            result = min(result,moves)
+
+    print(result)
+        
+
+    
+
+
+
+
+9 9 3 2 4 4 8 5 3
+2 3 3 4 4 5 8 9 9
+si + 1 = 2
+9 8 5 4 3 2
+0 0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 0 1 1
+4 4 4 4 4 4 3 4 4
+4 4 4 4 4 4 3 0 4
+5 5 5 5 5 5 4 1 5
+5 5 5 5 0 0 4 1 5
+6 6 6 6 1 1 5 2 6
+6 6 0 6 1 1 5 2 0
+7 7 1 7 2 2 6 3 1
+7 7 1 0 2 2 6 3 1
+9 9 3 2 4 4 8 5 3
+
