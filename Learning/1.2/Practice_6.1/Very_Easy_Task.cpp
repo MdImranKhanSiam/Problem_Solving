@@ -10,13 +10,18 @@ using namespace std;
 
 ll copies( ll second, ll printer_1, ll printer_2 )
 {
-    ll total = 1;
+    ll fast = min(printer_1,printer_2);
 
-    second -= min(printer_1,printer_2);
+    ll total = 0;
 
-    total += second/printer_1;
+    if( fast <= second )
+    {
+        total = 1;
 
-    total += second/printer_2;
+        second -= fast;
+
+        total += (second/printer_1)+(second/printer_2);
+    }
 
     return total;
 }
@@ -33,7 +38,7 @@ int main()
 
     ll result = 0;
 
-    ll low = 0, mid = 0, high = 1e13;
+    ll low = 0, mid = 0, high = 1e10;
 
     while( low <= high )
     {
