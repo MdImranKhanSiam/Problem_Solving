@@ -11,7 +11,7 @@ def visualize_tours_with_real_distances(
     tours,
     distance_matrix,
     save_as="mp4",
-    fps=120,
+    fps=10,
     loop=True,
     coords=None,
     use_mds=True,
