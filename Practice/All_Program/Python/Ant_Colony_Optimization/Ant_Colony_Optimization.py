@@ -1,7 +1,7 @@
 import random
 import Visualize_Circular_Tour
 
-Ants = 40
+Ants = 10
 Tours = 500
 Alpha = 11
 Beta = 4
