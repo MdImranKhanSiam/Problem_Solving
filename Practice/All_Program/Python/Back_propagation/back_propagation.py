@@ -37,6 +37,17 @@ def back_propagation():
     weight_2_new = weight_2-(eta_learning_rate*error_weight_2)
     weight_3_new = weight_3-(eta_learning_rate*error_weight_3)
     weight_4_new = weight_4-(eta_learning_rate*error_weight_4)
+    
+    Round = 5
+    
+    weight_1_new = round(weight_1_new,Round)
+    weight_2_new = round(weight_2_new,Round)
+    weight_3_new = round(weight_3_new,Round)
+    weight_4_new = round(weight_4_new,Round)
+    weight_5_new = round(weight_5_new,Round)
+    weight_6_new = round(weight_6_new,Round)
+    weight_7_new = round(weight_7_new,Round)
+    weight_8_new = round(weight_8_new,Round)
 
     return weight_1_new,weight_2_new,weight_3_new,weight_4_new,weight_5_new,weight_6_new,weight_7_new,weight_8_new
 
@@ -58,7 +69,7 @@ bias_1 = 0.35
 bias_2 = 0.60
 
 
-iteration = 50000
+iteration = 1000000
 
 for iter in range(iteration):
     # print(f'\n\nIteration {iter+1}')
@@ -83,13 +94,13 @@ for iter in range(iteration):
 
 print(f'Final Result')
 
-print(f'Weight 1: {weight_1:.2f}')
-print(f'Weight 2: {weight_2:.2f}')
-print(f'Weight 3: {weight_3:.2f}')
-print(f'Weight 4: {weight_4:.2f}')
-print(f'Weight 5: {weight_5:.2f}')
-print(f'Weight 6: {weight_6:.2f}')
-print(f'Weight 7: {weight_7:.2f}')
-print(f'Weight 8: {weight_8:.2f}')
+print(f'Weight 1: {weight_1:.5f}')
+print(f'Weight 2: {weight_2:.5f}')
+print(f'Weight 3: {weight_3:.5f}')
+print(f'Weight 4: {weight_4:.5f}')
+print(f'Weight 5: {weight_5:.5f}')
+print(f'Weight 6: {weight_6:.5f}')
+print(f'Weight 7: {weight_7:.5f}')
+print(f'Weight 8: {weight_8:.5f}')
 print(f'Output 1: {out_o1:.2f}')
 print(f'Output 2: {out_o2:.2f}')
