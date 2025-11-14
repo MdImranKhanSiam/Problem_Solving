@@ -51,10 +51,10 @@ for _ in range(tc):
         mid = (low+high)/2
 
         if target_tax <= tax(mid):
-            high = mid-0.000001
+            high = mid-0.001
             result = mid
         else:
-            low = mid+0.000001
+            low = mid+0.001
 
     result = round(result,2)
     print(result)
