@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
 
-#include<stdio.h>
-
-#include<string.h>
-
 using namespace std;
 
 #define endl "\n"
