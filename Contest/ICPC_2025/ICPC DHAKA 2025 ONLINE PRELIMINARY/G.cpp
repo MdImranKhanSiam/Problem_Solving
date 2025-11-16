@@ -21,8 +21,10 @@ void Print( vector<vector<ll>>&matrix, ll n, ll m )
     }
 }
 
-ll operation( vector<ll>row_danger,column_danger )
+ll operation( vector<vector<ll>>&matrix, ll n, ll m, vector<ll>&row_danger, vector<ll>&column_danger )
 {
+    ll total_danger = 0;
+
     for( int i = 0; i < n; i++ )
     {
         ll danger;
@@ -40,6 +42,8 @@ ll operation( vector<ll>row_danger,column_danger )
         }
 
         row_danger.push_back(danger);
+
+        total_danger += danger;
     }
 
     for( int j = 0; j < m; j++ )
@@ -59,7 +63,11 @@ ll operation( vector<ll>row_danger,column_danger )
         }
 
         column_danger.push_back(danger);
+
+        total_danger += danger;
     }
+
+    return total_danger;
 }
 
 int main()
@@ -68,7 +76,7 @@ int main()
 //
 //    cin.tie(NULL);
 
-    int n, m;
+    ll n, m, total_danger = 0;
 
     cin >> n >> m;
 
@@ -92,19 +100,22 @@ int main()
 
     vector<ll>row_danger,column_danger;
 
+    total_danger = operation(matrix,n,m,row_danger,column_danger);
+
+    cout << "Total Danger: " << total_danger << endl;
 
 
-    for( auto point: row_danger )
-    {
-        cout << "Danger: " << point << " ";
-    }
-
-    cout << endl;
-
-    for( auto point: column_danger )
-    {
-        cout << "Danger: " << point << " ";
-    }
+//    for( auto point: row_danger )
+//    {
+//        cout << "Danger: " << point << " ";
+//    }
+//
+//    cout << endl;
+//
+//    for( auto point: column_danger )
+//    {
+//        cout << "Danger: " << point << " ";
+//    }
 
     ll Max = LLONG_MIN;
 
@@ -148,9 +159,15 @@ int main()
 //    }
 
 
-    matrix[i][j] = pow(2,30);
+//    matrix[position.first][position.second] = pow(2,30);
 
-    cout << "Power: " << Power << endl;
+//    matrix[position.first][position.second] = 0;
+
+    matrix[0][1] = 13;
+
+    total_danger = operation(matrix,n,m,row_danger,column_danger);
+
+    cout << "Total Danger: " << total_danger << endl;
 
 
     cout << position.first << " " << position.second << ": " << row_danger[position.first]+column_danger[position.second] << endl;
